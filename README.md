@@ -1,91 +1,45 @@
-CARChatbot Project
+🚗 Car Loan Contract Review API
 
-Mentor: Mahaprasad Jena
-Repository: https://github.com/springboardmentor99999-a11y/CARChatbot
+This project is a backend API built using FastAPI that analyzes car loan or lease contract documents and extracts important financial details. The goal is to help users understand key terms in their loan agreement before signing it.
 
-🚗 Project Overview
+Car loan contracts often contain complex financial clauses, penalties, and hidden charges that are difficult to interpret. This system reads the uploaded contract PDF, extracts relevant information such as interest rate, loan term, monthly payment, fees, and penalties, and then evaluates how fair the contract appears.
 
-CARChatbot is a machine learning + NLP-based chatbot that helps users with car-related queries such as:
+The API also provides a fairness score and suggests possible negotiation points.
 
-Insurance assistance
+🔍 What the System Does
 
-Loan and EMI support
+When a user uploads a contract PDF, the system:
 
-Repair & maintenance suggestions
+Extracts financial details (APR, loan term, monthly payment, finance amount)
 
-Car model comparison
+Identifies fees (processing fee, documentation fee, registration fee)
 
-Troubleshooting common issues
+Detects penalties (late payment, early termination, etc.)
 
-This repository will be developed by a batch of interns working under assigned branches.
+Highlights potential risk clauses
 
-🔒 Branch Rules for Interns
-❗ DO NOT push anything to the main branch.
+Calculates a fairness score
 
-All interns must work ONLY inside their assigned branch.
+Suggests negotiation strategies
 
-Example branch names:
+Stores contract data in a database
 
-khushisu192-branch
+The output is returned as structured JSON.
 
-harshithboyina-branch
+🛠️ Technologies Used
 
-kanhaiyagupta6773-branch
+Python
 
-…and so on.
+FastAPI
 
-If you don't know your branch name, ask the mentor.
+SQLite
 
-🛠️ How Interns Should Work
-1️⃣ Clone the repository
-git clone https://github.com/springboardmentor99999-a11y/CARChatbot.git
-cd CARChatbot
+Uvicorn
 
-2️⃣ Create your branch
-git checkout -b <your-branch-name>
+Pydantic
 
-3️⃣ Add your project files
+PDF text extraction
 
-Place your:
+🎯 Purpose of the Project
 
-Python scripts
-
-Models
-
-Datasets
-
-Images
-
-Jupyter Notebooks
-
-Documentation
-
-4️⃣ Commit and push
-git add .
-git commit -m "My first commit"
-git push origin <your-branch-name>
-
-📁 Recommended Folder Structure
-CARChatbot/
-│
-├── app/               # Main backend code
-├── models/            # ML models
-├── data/              # Training data
-├── notebooks/         # Jupyter notebooks
-├── images/            # Reference images or documentation visuals
-├── docs/              # Documentation files
-└── README.md
-
-✔️ Pull Request Process
-
-Once work is ready:
-
-Push to your branch
-
-Create a Pull Request to main
-
-Mentor will review and approve or request changes
-
-🙌 Contributing
-
-Follow guidelines in CONTRIBUTING.md (to be added soon).
+This project was built as part of learning backend development and AI-based document analysis. It demonstrates how contract parsing, rule-based evaluation, and API development can be combined into a practical real-world application.

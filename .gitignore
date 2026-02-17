@@ -24,7 +24,7 @@ env/
 *.onnx
 
 # Data folders
-data/
+
 datasets/
 
 # Environment variables
@@ -33,3 +33,7 @@ datasets/
 # System files
 .DS_Store
 Thumbs.db
+
+#database files
+*.db
+
